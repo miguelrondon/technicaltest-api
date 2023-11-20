@@ -1,6 +1,7 @@
 
 package com.technicaltest.restApi.dto;
 
+import com.technicaltest.restApi.entity.Policy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,4 +25,9 @@ public class CreatePolicyDto {
         this.vehicles = vehicles;
     }
     
+    public Policy toPolicy() {
+        Policy policy = new Policy();
+        
+        return policy;
+    }
 }
